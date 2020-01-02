@@ -1,23 +1,29 @@
 {
-  "name": "react_tic_tac_toe",
-  "version": "0.1.0",
+  "name": "tic-tac-react",
+  "version": "1.0.0",
   "private": true,
+  "homepage": "https://github.com/vwen01",
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "gh-pages": "^2.1.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-scripts": "^3.3.0"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.5",
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "deploy": "npm run build&&gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
